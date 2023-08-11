@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: rgb(0, 0, 33);
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+nav {
+    display: flex;
+    background-color: rgb(58, 58, 92);
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: 9c9ce4;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.left {
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.home-section {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.left-section {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.social-icon {
+    width: 19%;
+}
+
+.right-section {
+    text-align: center;
+    margin-top: 300px;
+    width: 41%;
+}
+
+.right-section img {
+    width: 55%;
+}
+
+.para {
+
+    color: white;
+    font-size: 53px;
+}
+
+.design {
+    font-size: 60px;
+    color: purple;
+}
+
+.btn {
+    height: 40px;
+    width: 160px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: #818193;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #1c1111;
+}
+
+.btn:hover {
+    background-color: #7b7b88;
+
+    font-weight: bold;
+}
+
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    /* text-align: center; */
+    height: 100vh;
+}
+
+
+.skill-container {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+}
+
+.skill-card {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: 19px;
+}
+
+
+.icons {
+    width: 8%;
+    border: 3px solid rebeccapurple;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px #8b8eaf;
+}
+
+
+.project {
+    padding: 32px 0;
+    height: 100vh;
+}
+
+.project-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+    color: white;
+}
+
+.projects-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.project-container {
+    text-align: center;
+    width: 21rem;
+    padding: 1rem;
+}
+
+.project-card {
+    border-radius: 11px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 3px 10px #8b8eaf;
+}
+
+.project-container:hover {
+    background: #343535;
+    width: 18%;
+    font-size: 17px;
+    color: wheat;
+    /* cursor: pointer; */
+}
+
+.project-pic {
+    width: 58%;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+.project-description {
+    text-align: center;
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+.btn-2 {
+    height: 40px;
+    width: 100px;
+    background-color: #B3BCF0;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: #7CB4FF;
+    width: 150px;
+    font-weight: bold;
+}
+
+
+
+/* Contact Secetion */
+.contact-form h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+    justify-content: center;
+    box-shadow: 0px 2px 3px red;
+    align-items: center;
+}
+
+.contact-form {
+    background-color: #F3F3F3;
+    text-align: center;
+    margin-top: 115px;
+    height: 400px;
+    width: 560px;
+    border-radius: 10px;
+    box-shadow: 9px 0px 10px 0px #525a60
+}
+
+.first {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.second {
+    width: 68%;
+    height: 35px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.phone {
+    width: 68%;
+    height: 35px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.btn-1 {
+    height: 45px;
+    width: 200px;
+    background-color: #00D689;
+    margin-right: 184px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    background-color: #3a3a5c;
+    height: 12vh;
+    justify-content: center;
+}
+
+.footer-para {
+    align-content: center;
+}
