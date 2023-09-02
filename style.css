@@ -4,8 +4,10 @@
 }
 
 :root {
-    --main-bg-color: rgb(0, 0, 33);
-
+    --main-bg-color: #212121;
+    --main-bg-color-1: #7b6f91;
+    --main-bg-color-2: rgb(0, 0, 33);
+    --social-icon-color-after: #cff5f7;
 }
 
 body {
@@ -15,23 +17,22 @@ body {
 
 nav {
     display: flex;
-    background-color: rgb(58, 58, 92);
-    height: 80px;
+    background-color: rgb(33, 33, 33);
     align-items: center;
     justify-content: space-around;
-
-
+    padding: 25px 0;
+    position: sticky;
+    /* top: 0; */
+    /* width: 100%; */
 }
 
 nav ul {
     display: flex;
-    height: 100%;
-    width: 100%;
 }
 
 nav ul li {
     list-style: none;
-    margin: 0 30px;
+    padding: 0 30px;
 }
 
 nav ul li a {
@@ -40,21 +41,48 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: 9c9ce4;
+    /* color: 9c9ce4; */
     font-size: 1.2rem;
     font-weight: 900;
+    border-bottom: 1px solid rgb(157, 5, 5);
 }
 
 .left {
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
 
 }
+
+.left:hover {
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(157, 5, 5);
+}
+
+.burger-menu {
+    display: none;
+    position: absolute;
+    right: 4%;
+    top: 23px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    margin: 5px 3px;
+    height: 5px;
+
+}
+
+/* .home {
+    height: 100vh;
+} */
 
 .home-section {
     display: flex;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .left-section {
@@ -66,7 +94,7 @@ nav ul li a:hover {
 }
 
 .social-icon {
-    width: 19%;
+    width: 11%;
 }
 
 .right-section {
@@ -87,37 +115,102 @@ nav ul li a:hover {
 
 .design {
     font-size: 60px;
-    color: purple;
+    color: rgb(187, 116, 149);
 }
 
 .btn {
-    height: 40px;
-    width: 160px;
     text-decoration: none;
-    font-size: 15px;
-    margin-top: 10px;
-    background-color: #818193;
+    font-size: 20px;
+    margin: 0 5px;
+    padding: 9px 20px;
+    background-color: #212121;
+    border-radius: 7px;
+    border: 2px solid #0173ec;
 }
 
 .btn a {
     text-decoration: none;
-    color: #1c1111;
+    color: #009fff;
 }
 
 .btn:hover {
-    background-color: #7b7b88;
+    background-color: #000;
 
     font-weight: bold;
 }
 
+.btn-redirect {
+    /* display: flex;
+    align-items: center; */
+    margin-top: 30px;
+}
 
-.skills {
-    max-width: 68.75rem;
-    margin: auto;
-    /* text-align: center; */
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     height: 100vh;
 }
 
+.about-container {
+    display: flex;
+}
+
+.about-left {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-right {
+    display: flex;
+    align-items: center;
+    max-width: 59%;
+}
+
+.about-content {
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 45vh;
+    box-shadow: 7px 9px 5px 1px #000;
+    color: #403c36;
+}
+
+.about-heading {
+    font-size: 50px;
+    border-right: 5px solid #000;
+    /* box-shadow: 7px 6px 10px 3px #000; */
+    padding: 36px;
+    /* border-radius: 7px; */
+    width: 40%;
+}
+
+.skills {
+    /* max-width: 72.75rem;
+    margin: auto; */
+    /* text-align: center; */
+}
+
+.skill-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.skill-heading {
+    display: flex;
+    font-size: 60px;
+    width: 13%;
+    /* text-align: center; */
+    border-right: 5px solid #000;
+    /* box-shadow: 8px 7px 8px #3e3838; */
+    /* border-radius: 10px; */
+}
 
 .skill-container {
     /* text-align: center; */
@@ -125,6 +218,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     height: 75vh;
+    width: 62%;
 }
 
 .skill-card {
@@ -137,6 +231,7 @@ nav ul li a:hover {
     color: white;
     font-size: 30px;
     margin: 19px;
+    border-top: 2px solid black;
 }
 
 
@@ -156,11 +251,14 @@ nav ul li a:hover {
     height: 100vh;
 }
 
-.project-title {
-    text-align: center;
-    margin: 30px 0;
-    font-size: 40px;
-    color: white;
+.project-heading {
+    /* width: 15%; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 50px;
+    /* border-right: 5px solid #000; */
 }
 
 .projects-container {
@@ -229,86 +327,189 @@ nav ul li a:hover {
 
 
 /* Contact Secetion */
+.contact {
+    /* height: 100vh; */
+    min-height: calc(100vh - 8vh);
+}
+
+.connect-container {
+    width: 17%;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.connect-heading {
+    font-size: 70px;
+    width: 96%;
+}
+
+
+
+.social-container {
+    /* display: flex;
+    justify-content: center;
+    height: 22vh;
+    align-items: center;
+    margin-top: 118px; */
+    width: 100%;
+    border-bottom: 3px solid #000;
+    box-shadow: 5px 2px 5px 1px #000;
+    border-radius: 10px;
+}
+
+.social-icons {
+    /* text-align: center; */
+    /* margin-top: 90px; */
+    width: 100%;
+}
+
+.social-icon {
+    width: 15%;
+    padding: 20px 10px;
+}
+
+.social-icon-a-github,
+/* .social-icon-a-leetcode, */
+.social-icon-a-linkedin,
+.social-icon-a-twitter,
+.social-icon-a-instagram {
+    position: relative;
+
+}
+
+.social-icon-a-github:hover::after {
+    content: "Github";
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    color: var(--social-icon-color-after);
+    font-size: 21px;
+}
+
+/* .social-icon-a-leetcode:hover::after {
+    content: "Leetcode";
+    position: absolute;
+    top: -10%;
+    left: 6%;
+    color: var(--social-icon-color-after);
+    font-size: 19px;
+} */
+
+.social-icon-a-linkedin:hover::after {
+    content: "Linkedin";
+    position: absolute;
+    top: -10%;
+    left: 7%;
+    color: var(--social-icon-color-after);
+    font-size: 19px;
+}
+
+.social-icon-a-twitter:hover::after {
+    content: "Twitter";
+    position: absolute;
+    top: -10%;
+    left: 6%;
+    color: var(--social-icon-color-after);
+    font-size: 19px;
+}
+
+.social-icon-a-instagram:hover::after {
+    content: "Instagram";
+    position: absolute;
+    top: -27%;
+    left: -5%;
+    color: var(--social-icon-color-after);
+    font-size: 19px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .contact-form h1 {
     margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 43px;
+    color: #6c6060;
+}
+
+.contact-form p {
+    font-size: 20px;
+    color: #fff;
 }
 
 .contact-section {
     display: flex;
-    background-color: var(--main-bg-color);
-    min-height: 100vh;
+    /* background-color: var(--main-bg-color); */
+    /* min-height: 100vh; */
     justify-content: center;
-    box-shadow: 0px 2px 3px red;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .contact-form {
-    background-color: #F3F3F3;
     text-align: center;
     margin-top: 115px;
-    height: 400px;
-    width: 560px;
+    height: 560px;
+    width: 610px;
     border-radius: 10px;
-    box-shadow: 9px 0px 10px 0px #525a60
+    box-shadow: 7px 4px 9px 1px #000;
 }
 
 .first {
-    width: 30%;
-    padding: 10px;
-    border: 1px solid #ccc;
+
+    padding: 20px 10px;
+    border: 1px solid #6C4A4A;
     border-radius: 5px;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #212121;
+    color: wheat;
 }
 
 .second {
-    width: 68%;
-    height: 35px;
-    border: 1px solid #ccc;
+    padding: 14px 120px;
+    border: 1px solid #6C4A4A;
     text-align: center;
     margin-bottom: 4px;
-}
-
-.phone {
-    width: 68%;
-    height: 35px;
-    border: 1px solid #ccc;
-    text-align: center;
+    font-weight: bold;
+    background-color: #212121;
+    color: wheat;
 }
 
 .btn-1 {
-    height: 45px;
-    width: 200px;
     background-color: #00D689;
-    margin-right: 184px;
     margin-top: 40px;
     border: 1px solid #ccc;
     border-radius: 7px;
+    padding: 11px 193px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
+.footer {
     display: flex;
-    background-color: #3a3a5c;
-    height: 12vh;
-    justify-content: center;
+    align-items: center;
+    background-color: #1e1b1b;
+    ;
+    height: 8vh;
+    text-align: center;
+    justify-content: space-between;
 }
 
-.footer-para {
-    align-content: center;
+.footer-1 {
+    padding: 0 60px;
+}
+
+.footer-2 {
+    margin-right: 48px;
 }
