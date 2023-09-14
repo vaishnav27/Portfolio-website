@@ -51,22 +51,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
-    animation: left-ani 4s;
-    animation-delay: 100ms;
 }
-
-@keyframes left-ani {
-    from {
-        color: red;
-        text-transform: none;
-    }
-
-    to {
-        color: white;
-        text-transform: uppercase;
-    }
-}
-
 
 .left:hover {
     color: red;
@@ -115,7 +100,6 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 300px;
     width: 41%;
-
 }
 
 .right-section img {
@@ -126,39 +110,23 @@ nav ul li a:hover {
 
     color: white;
     font-size: 53px;
-    animation: uturn 4s;
-}
-
-@keyframes uturn {
-    from {
-
-        color: rgb(187, 116, 149);
-        ;
-    }
-
-    to {
-        color: white;
-    }
 }
 
 .design {
     font-size: 60px;
     color: rgb(187, 116, 149);
-    animation: turn 3s;
+    animation-name: aboutChange 105s;
 }
 
-@keyframes turn {
+@keyframes aboutChange {
     from {
-        color: #fff;
-
+        font-size: 1px;
     }
 
     to {
-        color: rgb(187, 116, 149);
-
+        font-size: 60px;
     }
 }
-
 
 .btn {
     text-decoration: none;
