@@ -1,21 +1,21 @@
-burger = document.querySelector(".burger-menu");
-navbar = document.querySelector(".navbar");
-navlist = document.querySelector(".right");
-leftdiv = document.querySelector(".left");
-hidden = document.querySelector(".navbar");
+const burger = document.querySelector(".burger-menu");
+const navbar = document.querySelector(".navbar");
+const navlist = document.querySelector(".right");
+const leftdiv = document.querySelector(".left");
+const hidden = document.querySelector(".navbar");
 
 burger.addEventListener("click", () => {
   navlist.classList.toggle("v-hidden");
   navbar.classList.toggle("h-navbar");
-  // leftdiv.classList.toggle("v-hidden");
+  leftdiv.classList.toggle("v-hidden");
   hidden.classList.toggle("hide-height");
 });
 
 const roles = [
-  "React Developer |",
-  "Frontend Developer |",
-  "Blockchain Developer |",
   "Web Developer |",
+  "Frontend Developer |",
+  "React Developer |",
+  "Blockchain Developer |",
 ];
 let roleIndex = 0;
 
@@ -83,3 +83,14 @@ const displayName = () => {
 };
 
 displayName();
+
+function showMore(button) {
+  var content = button.previousElementSibling; // Get the content div
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+    button.innerText = "Show less";
+  } else {
+    content.style.display = "none";
+    button.innerText = "Show more";
+  }
+}

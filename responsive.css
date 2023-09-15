@@ -8,6 +8,7 @@
     nav {
         flex-direction: column;
         height: 25px;
+        transition: all 0.3s ease-in-out;
     }
 
     nav ul {
@@ -15,7 +16,8 @@
     }
 
     .left {
-        position: fixed;
+        /* position: fixed; */
+        position: absolute;
         top: 25px;
         left: 40px;
     }
@@ -29,6 +31,7 @@
 
     .burger-menu {
         display: block;
+        transition: all 0.3s ease-out;
     }
 
     .h-navbar {
